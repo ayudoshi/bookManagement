@@ -1,5 +1,5 @@
 
-# ComicBook API
+# BookManagement API
 
 This is a Node.js + Express + MongoDB API for managing comic books. The API includes routes for:
 - Creating, editing, and deleting comic books
