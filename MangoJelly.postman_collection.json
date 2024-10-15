@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "26d46f07-649d-4f26-9cb2-3a8b4cd6d2b1",
+		"name": "MangoJelly",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25453367"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:3000/api/addComic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookName\":\"One Night At Call Center\",\r\n    \"authorName\":\"Chetan Bhagat\",\r\n    \"yearOfPublication\":\"2020\",\r\n    \"price\":\"400\",\r\n    \"discount\":\"10\",\r\n    \"numberOfPages\":\"145\",\r\n    \"condition\":\"used\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/addComic",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addComic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:3000/api/updateComic/670e7404daeb62b36be1532a",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookName\": \"It Ends With Us\",\r\n    \"authorName\": \"Colleen Hoover\",\r\n    \"yearOfPublication\": 2024,\r\n    \"price\": -1,\r\n    \"discount\": 100,\r\n    \"numberOfPages\": 298,\r\n    \"condition\": \"used\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/updateComic/670e7404daeb62b36be1532a",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"updateComic",
+						"670e7404daeb62b36be1532a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:3000/api/deleteComic/670e7437daeb62b36be1532c",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookName\":\"Half GirlFriend\",\r\n    \"authorName\":\"Chetan Bhagat\",\r\n    \"yearOfPublication\":\"2017\",\r\n    \"price\":\"400\",\r\n    \"discount\":\"10\",\r\n    \"numberOfPages\":\"145\",\r\n    \"condition\":\"used\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/deleteComic/670e7437daeb62b36be1532c",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteComic",
+						"670e7437daeb62b36be1532c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:3000/api/allComics/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/allComics/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"allComics",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:3000/api/allComics/sort?sort=price&order=desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/allComics/sort?sort=price&order=desc",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"allComics",
+						"sort"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "price"
+						},
+						{
+							"key": "order",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:3000/api/allComics/filter?numberOfPages=300",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/allComics/filter?numberOfPages=300",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"allComics",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "numberOfPages",
+							"value": "300"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:3000/api/comic/670e7404daeb62b36be1532a",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/comic/670e7404daeb62b36be1532a",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comic",
+						"670e7404daeb62b36be1532a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
